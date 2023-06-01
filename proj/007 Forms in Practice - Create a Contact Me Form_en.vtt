@@ -1,0 +1,561 @@
+WEBVTT
+
+0
+00:00.420 --> 00:04.950
+Now, let's structure our form so that it looks like a proper contact form.
+
+1
+00:05.460 --> 00:09.900
+So let's again add a horizontal rule to divide the top half from the bottom.
+
+2
+00:10.500 --> 00:15.100
+And then in our form, we want a label that says Your Name,
+
+3
+00:15.120 --> 00:18.200
+and then after that, we're going to get rid of this color.
+
+4
+00:18.810 --> 00:20.630
+But we do want that line break.
+
+5
+00:20.640 --> 00:22.900
+And then we've got a label that says Password,
+
+6
+00:22.920 --> 00:25.680
+maybe we should ask them for Your Email.
+
+7
+00:26.190 --> 00:28.530
+Maybe that'll help us get back in touch with them.
+
+8
+00:29.250 --> 00:34.110
+And instead of password input type, we're going to change that to email.
+
+9
+00:34.470 --> 00:38.580
+And to do that, I have to use something that's not actually an input.
+
+10
+00:38.850 --> 00:42.300
+Instead, it's an HTML element called text area.
+
+11
+00:42.510 --> 00:51.690
+So let's add a label first, and let's say "Your Message." And text area has two attributes that are really
+
+12
+00:51.690 --> 00:52.290
+important.
+
+13
+00:52.770 --> 00:56.040
+One is the number of rows and the other one is the number of columns.
+
+14
+00:56.400 --> 01:01.500
+So rows determine how tall your text area should be,
+
+15
+01:01.920 --> 01:05.520
+and columns determine how wide it should be on your web page.
+
+16
+01:06.940 --> 01:12.080
+I'm going to stick to maybe 10 rows and 30 columns.
+
+17
+01:12.580 --> 01:18.160
+But if we hit Save, you'll see that it's actually something that you can modify.
+
+18
+01:18.490 --> 01:22.930
+And I'm sure you've seen these text fields all over the internet. Anywhere where you have to put in
+
+19
+01:22.930 --> 01:23.800
+a long answer
+
+20
+01:24.070 --> 01:27.910
+you'll get something that looks like a box and you've got these few lines in the right corner.
+
+21
+01:28.240 --> 01:33.850
+And what you can do is you can click and drag it to make that text field as large or as small as you
+
+22
+01:33.850 --> 01:34.540
+want it to be.
+
+23
+01:34.990 --> 01:39.430
+But the default or the starting position is defined by the developer.
+
+24
+01:40.900 --> 01:42.230
+It's looking a little bit messy.
+
+25
+01:42.250 --> 01:48.190
+Let's add a few more line breaks so that we can space things out a little bit and make it look a little
+
+26
+01:48.190 --> 01:49.030
+bit more appealing.
+
+27
+01:49.180 --> 01:51.190
+All right, so that looks a little bit nicer.
+
+28
+01:51.220 --> 01:54.850
+I know it's still very barebones, but at least it's starting to take shape.
+
+29
+01:55.390 --> 02:01.930
+Now, the only problem is that at the moment, when you hit the submit button, what it does is that
+
+30
+02:01.930 --> 02:04.480
+it'll take you back to your home page.
+
+31
+02:05.050 --> 02:11.250
+And the reason is because when we created our form, it has this attribute called action,
+
+32
+02:11.260 --> 02:14.710
+i.e what should happen when you click submit.
+
+33
+02:15.160 --> 02:20.920
+And at the moment, the action is simply take the user to the index.html page.
+
+34
+02:21.220 --> 02:23.140
+And that is, of course, our home page.
+
+35
+02:23.830 --> 02:26.560
+Now, without knowing anything about CSC or JavaScript,
+
+36
+02:26.830 --> 02:32.290
+we can't actually get very deep into understanding what the method or the action means, but you kind
+
+37
+02:32.290 --> 02:34.990
+of want it to have some basic functionality, right?
+
+38
+02:35.230 --> 02:39.070
+Because otherwise it doesn't make any sense to anybody who's going onto our website.
+
+39
+02:39.460 --> 02:45.160
+And even though this is our first web site, it doesn't mean that it can't function well or do something
+
+40
+02:45.160 --> 02:46.000
+very simple.
+
+41
+02:46.510 --> 02:51.820
+So what I'm going to do is I'm going to change the form action to a mail to.
+
+42
+02:53.140 --> 02:59.710
+And what mailtos do is that when you press the submit button, they'll open up your default mail client,
+
+43
+02:59.710 --> 03:01.720
+so that could be mail on Mac
+
+44
+03:01.720 --> 03:09.730
+or it might go into Gmail if you're inside Chrome. And it puts in the email address that you specify
+
+45
+03:09.760 --> 03:11.140
+after the colon here.
+
+46
+03:11.350 --> 03:18.130
+And the post in this case simply means that we're going to transfer what the user types into these input
+
+47
+03:18.130 --> 03:20.800
+fields into the email client.
+
+48
+03:21.220 --> 03:24.070
+If we hit Save, I'll show you what it looks like.
+
+49
+03:24.580 --> 03:31.030
+So let's go to contact me and let's give my name, my email,
+
+50
+03:34.130 --> 03:35.390
+and my message.
+
+51
+03:37.830 --> 03:45.350
+Now, if I hit submit, you can see that it opens up my mail app and adds a little bit of text into
+
+52
+03:45.350 --> 03:46.730
+the body of the email.
+
+53
+03:47.090 --> 03:52.910
+Now if when you hit the submit button, you don't see any pop ups, you don't see a mail application
+
+54
+03:53.390 --> 03:58.230
+or if nothing happens, then it could be that there might be an error in your code,
+
+55
+03:58.250 --> 03:59.450
+so go back and check that.
+
+56
+03:59.750 --> 04:06.410
+But more likely, it might be because you don't actually have a mail application installed on your computer.
+
+57
+04:07.100 --> 04:11.930
+Now, if you're using a Mac, by default, it comes with the mail application.
+
+58
+04:12.440 --> 04:16.520
+But if you are on Windows, you might actually not have a mail application installed.
+
+59
+04:17.150 --> 04:23.240
+So if you don't want to install a separate mail application, then the best solution for this is to
+
+60
+04:23.240 --> 04:28.040
+actually set Google Mail or Gmail as your default email application.
+
+61
+04:28.340 --> 04:31.010
+Because let's face it, most of us have a Gmail account, right?
+
+62
+04:31.670 --> 04:33.440
+So now I'm going to show you how to do that.
+
+63
+04:33.530 --> 04:40.070
+So first, you need the Chrome browser open, and then you go to these three dots here and then go to
+
+64
+04:40.130 --> 04:40.850
+Settings.
+
+65
+04:41.600 --> 04:47.270
+Now here you're going to click on privacy and security and then go to site settings.
+
+66
+04:47.600 --> 04:52.520
+Now, sometimes I've seen this called content settings, but it should have this little symbol, and
+
+67
+04:52.520 --> 04:56.300
+if you click on it, it should take you to a page with the permissions.
+
+68
+04:56.840 --> 04:58.680
+If you scroll to the bottom of the permissions,
+
+69
+04:58.730 --> 05:00.350
+click on additional permissions,
+
+70
+05:00.650 --> 05:02.330
+then you can go to the protocol
+
+71
+05:02.330 --> 05:08.000
+handlers. Might also be called handlers. But keep an eye on this little icon.
+
+72
+05:08.390 --> 05:10.520
+We're going to need to remember a little bit later on.
+
+73
+05:11.330 --> 05:17.930
+Now, go to the protocol handlers and make sure that sites are allowed to handle protocols, so make
+
+74
+05:17.930 --> 05:22.070
+sure this is selected. And if not, go ahead and click on it.
+
+75
+05:22.730 --> 05:27.710
+And then we're going to have to make sure that in the section where it says "not allowed to handle protocols"
+
+76
+05:28.070 --> 05:31.010
+that our mail.google.com is not here.
+
+77
+05:31.040 --> 05:35.000
+So if it is like this, go ahead and click on the X to remove it.
+
+78
+05:35.540 --> 05:37.550
+So now you have a Gmail tab open
+
+79
+05:37.850 --> 05:39.180
+go ahead and close it down.
+
+80
+05:39.620 --> 05:43.070
+And then we're going to go to a new tab and head over to gmail.com.
+
+81
+05:43.970 --> 05:47.080
+So now when this loads up, you should see a little symbol here.
+
+82
+05:47.090 --> 05:47.870
+Remember that symbol
+
+83
+05:47.870 --> 05:48.920
+I asked you to remember?
+
+84
+05:49.430 --> 05:55.010
+So if you click on it, it says, Do you allow mail.google.com to open or email links and you should
+
+85
+05:55.010 --> 05:57.500
+click Allow and then click done.
+
+86
+05:58.340 --> 06:05.450
+Now I found a site to test mailto links and you can, of course, use the website that you've created.
+
+87
+06:05.810 --> 06:12.140
+If you click on the mailto link, it should take you to a new tab and it should pre-fill all the
+
+88
+06:12.140 --> 06:15.590
+information that we want to, and it should work as expected.
+
+89
+06:16.400 --> 06:21.650
+Now, alternatively, if you don't have a Gmail account or you don't want to use Gmail as your default
+
+90
+06:21.950 --> 06:27.380
+email client, you can also install an email application which takes a bit longer.
+
+91
+06:27.590 --> 06:34.070
+So in the Q&A section for this lesson, you can find text-based instructions for all I've just done, and
+
+92
+06:34.070 --> 06:36.890
+you can find that in the featured questions section.
+
+93
+06:37.310 --> 06:39.890
+So now that we've got this working, we can carry on.
+
+94
+06:40.550 --> 06:46.340
+Now it's not making too much sense right now, and in order to change that, we actually have to add
+
+95
+06:46.340 --> 06:48.320
+a little bit more to our form.
+
+96
+06:48.590 --> 06:55.700
+So I'm going to delete this class and I'm going to add another attribute called encoding type.
+
+97
+06:56.090 --> 07:02.030
+And this specifies just as up here, we're specifying that our website is encoded in UTF-8,
+
+98
+07:02.390 --> 07:07.190
+we're going to say that the data in our form is encoded in plain text.
+
+99
+07:07.490 --> 07:12.800
+So that way, when it launches the Mail app, you won't have these funny percentage signs and numbers.
+
+100
+07:13.100 --> 07:14.960
+You'll instead just have plain text.
+
+101
+07:15.620 --> 07:21.950
+Now, the other thing we need to add is a value to each of these name attributes, because that's going
+
+102
+07:21.950 --> 07:25.820
+to identify the data that's inside each of these inputs.
+
+103
+07:26.300 --> 07:27.430
+And I'll show you what I mean.
+
+104
+07:27.440 --> 07:30.530
+So let's add the name as yourName,
+
+105
+07:31.370 --> 07:34.190
+second, one yourEmail,
+
+106
+07:36.100 --> 07:38.800
+and the third one
+
+107
+07:39.220 --> 07:40.600
+yourMessage.
+
+108
+07:42.230 --> 07:49.590
+All right, let's hit save, and let's go back to our website, hit refresh, and let's try it again.
+
+109
+07:49.970 --> 07:55.310
+Now I didn't show you this last time, but the cool thing about the email text field that we added here
+
+110
+07:55.310 --> 08:00.020
+by changing the input to email is that it does some basic validation.
+
+111
+08:00.020 --> 08:05.540
+And that means if I type something like this and I try to hit enter now, it's a little bit different
+
+112
+08:05.540 --> 08:12.470
+from browser to browser, but your browser might tell you that please include an @ sign in your email
+
+113
+08:12.470 --> 08:15.560
+address because all email addresses have @ signs, right?
+
+114
+08:16.070 --> 08:19.400
+And then it says please enter a part following the @ sign.
+
+115
+08:19.640 --> 08:21.680
+All emails have something after the @ sign.
+
+116
+08:23.310 --> 08:29.640
+And it says emails don't contain these weird symbols, so you're probably not entering a correct email
+
+117
+08:29.670 --> 08:30.960
+or make sure that you check.
+
+118
+08:31.560 --> 08:33.240
+So that's our email.
+
+119
+08:33.900 --> 08:38.190
+But even though it's not a real email, it passes those basic validation checks.
+
+120
+08:38.490 --> 08:43.620
+But we got all of those validation checks for free just by changing our inputtype to email.
+
+121
+08:43.890 --> 08:45.220
+So it's a really pretty good deal.
+
+122
+08:45.270 --> 08:50.310
+And later on, we'll show you how to make that validation a little bit more sophisticated, but it's
+
+123
+08:50.310 --> 08:54.300
+really kind of cool that we have that. And then we'll add an email.
+
+124
+08:54.310 --> 08:58.170
+So let's say, hey there again and now hit submit.
+
+125
+08:58.470 --> 09:03.960
+And you can see now because we've added something to that name attribute
+
+126
+09:04.320 --> 09:10.410
+where we said yourName, yourEmail, yourMessage, what we added here and here and here.
+
+127
+09:11.280 --> 09:21.300
+Now, when we submit our form and we post this data that the users inputted to our mail client, then
+
+128
+09:21.300 --> 09:28.260
+it knows how to classify each bit of the data, i.e. this input should be labelled your name,
+
+129
+09:28.470 --> 09:33.030
+this input should be labelled your email and your message should be labelled like so.
+
+130
+09:33.350 --> 09:39.540
+So this is a really, really basic little bit of functionality that we can get without yet understanding
+
+131
+09:39.540 --> 09:41.100
+about JavaScript.
+
+132
+09:41.580 --> 09:48.060
+So once you get to the JavaScript module, we're going to come back and revisit forms and we're going
+
+133
+09:48.060 --> 09:51.180
+to unleash the full power of HTML forms.
+
+134
+09:52.080 --> 09:58.260
+But for now, this is a neat little bit of functionality that when we publish our website, it'll still
+
+135
+09:58.260 --> 10:04.920
+work well enough for anybody who's actually coming onto our personal website or personal page.
+
+136
+10:06.010 --> 10:10.930
+Now, in the next lesson, we're going to be launching into our intermediate HTML challenge.
+
+137
+10:11.260 --> 10:16.210
+So we're going to be getting you to recreate a webpage using all of the things that you've learned in
+
+138
+10:16.210 --> 10:16.870
+this module.
+
+139
+10:17.320 --> 10:20.200
+So for all of that and more, I'll see you on the next lesson.

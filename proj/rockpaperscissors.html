@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Rock-Papers-Scissors
+        </title>
+        <style>
+            button{
+                color:white;
+                background-color:black;
+                border-style:none;
+                width:100px;
+                height:30px;
+                border-radius:20px;
+                font-weight:bold;
+                transition:1s;
+                cursor:pointer;
+                
+            }
+            button:hover{
+                height:20px;
+                width:150px;
+                color:blue;
+                background-color:white;
+                border-radius:10%;
+                box-shadow:1px 2px 3px black;
+                letter-spacing:5px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <p>Rock-Papers-Scissors</p>
+        <button onclick="
+          var variable=Math.random();
+          var variable1;
+          if(variable>=0 && variable<=1/3)
+          {
+                variable1='rock';
+          }
+          else if(variable>1/3 && variable<=2/3)
+          {
+                variable1='paper';
+          }
+          else if(variable>2/3 && variable<=1)
+          {
+                variable1='scissor';
+          }
+          var result;
+          if(variable1=='rock')
+          {
+            result='tie';
+          }
+          else if(variable1=='scissor')
+          {
+            result='you win';
+          }
+          else if(variable1=='paper')
+          {
+            result='you lose';
+          }
+          alert(`your choice is rock and computers choice is ${variable1} and ${result}`);
+        
+        ">Rock</button>
+        <button onclick="
+          const variable=Math.random();
+          var variable1;
+          if(variable>=0 && variable<=1/3)
+          {
+                variable1='rock';
+          }
+          else if(variable>1/3 && variable<=2/3)
+          {
+                variable1='paper';
+          }
+          else if(variable>2/3 && variable<=1)
+          {
+                variable1='scissor';
+          }
+          var result;
+          if(variable1=='rock')
+          {
+            result='you win';
+          }
+          else if(variable1=='scissor')
+          {
+            result='you lose';
+          }
+          else if(variable1=='paper')
+          {
+            result='tie';
+          }
+          alert(`your choice is Paper and computers choice is ${variable1} and ${result}`);
+        
+        ">Paper</button>
+        <button onclick="
+           
+          const variable=Math.random();
+          var variable1;
+          if(variable>=0 && variable<=1/3)
+          {
+                variable1='rock';
+          }
+          else if(variable>1/3 && variable<=2/3)
+          {
+                variable1='paper';
+          }
+          else if(variable>2/3 && variable<=1)
+          {
+                variable1='scissor';
+          }
+          var result;
+          if(variable1=='rock')
+          {
+            result='you lose';
+          }
+          else if(variable1=='scissor')
+          {
+            result='tie';
+          }
+          else if(variable1=='paper')
+          {
+            result='win';
+          }
+          alert(`your choice is Scissor and computers choice is ${variable1} and ${result}`);
+        
+        ">Scissor</button>
+        <script>
+            
+        </script>
+    </body>
+</html>
