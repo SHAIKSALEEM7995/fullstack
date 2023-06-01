@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/project.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            First project
+        </title>
+        
+    <link rel="stylesheet" type="text/css" href="./First project_files/login.css"></head>
+    <body class="">
+        <div class="overall">
+            <div class="first">
+                 <div class="main">
+                      <p style="color:rgb(207, 90, 123);margin-left:85px">Welcome to <b><i style="color:rgb(4, 26, 148)">INFORMERS</i></b> world!</p>
+                 </div>
+                 <p class="para">
+                    <i> To <b>Sign in</b> our page choose any one of the domain.</i>
+                    </p><hr class="horizontal-line">
+                 <p></p>
+            <div>
+                     <img src="./First project_files/google.jpg">
+                     <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-419186023%3A1669537365733469&amp;flowEntry=ServiceLogin&amp;flowName=GlifWebSignIn&amp;ifkv=ARgdvAvW80rL2QtTOS2yZg4PnbVy66Mumjgpx4W8kL7tnUD6wzFM4kUpb_cIQxXfM1bXPfDm7dVpHg" target="_blank">Google</a>
+            </div>
+            <div class="clear"></div>
+                     <div class="facebook">
+                     <img src="./First project_files/facebook.jpg">
+                     <a href="https://www.facebook.com/login.php/" target="_blank">Facebook</a>
+            </div>
+            <div class="twitter">
+                     <img src="./First project_files/twitter.jpg">
+                     <a href="https://twitter.com/i/flow/login" target="_blank">Twitter</a>
+            </div>
+            <div class="clear"></div>
+                     <h1 class="nextaccount">CREATE A NEW INFROMER ACCOUNT</h1>
+                         <br>
+                     <p class="name"><button class="username">First Name</button>
+                         <b>:</b>
+                     <input type="username" class="firstname"></p>
+                     <p class="name"><button class="username">Last Name</button>
+                         <b>:</b>
+                     <input type="username" class="firstname"></p>
+                     <p class="name"><button class="username1">Password</button>
+                         <b>:</b>
+                     <input type="password" class="firstname"></p>
+                
+                     <p class="forgot">forgot password</p>
+                     <p class="twosteps">
+                         <button class="sighin">Sign in</button>
+                         <button class="login">Login in</button>
+                     </p>
+                     <div class="clear"></div>
+                          <hr class="horizontal-line" style="margin-top:4px">
+                     <div>
+                     <p class="last">
+                          By continuining,you agree to Informers<span class="agree"> Conditions of use </span>and <span class="agree">Privacy Notice</span>
+                     </p>
+            </div>
+                     <div class="clear"></div>
+                        <div class="last1">
+                            <p> <input type="checkbox">
+                             <span class="agree1">keep me signed in. </span>
+                             <select class="select">
+                                         <option>Details</option>
+                                         <option>Login</option>
+                                         <option>check</option>
+                             </select>
+                            </p>
+                             <button class="submit">Confirm account</button>
+                        </div>
+           
+
+       
+                     </div>
+            </div>
+        
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

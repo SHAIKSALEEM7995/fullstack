@@ -1,0 +1,200 @@
+<style>
+   .main{
+   
+   }
+      .first{
+        width:400px;
+        height:500px;
+        border:1px solid black;
+        border-radius:10px;
+        background-color:	#ebedd6;
+      }
+      .para{
+        margin-left:35px;
+        color:rgb(8, 9, 9);
+      }
+      a{
+                text-decoration:none;
+                font-weight:bold;
+                font-size:15px;
+                margin:5px;
+                
+                
+                
+                
+            }
+            img{
+                float:left;
+                width:20px;
+                border-radius:10px;
+                margin-left:65px;
+                
+            }
+            .horizontal-line{
+                width:300px;
+                border-color:white;
+                margin-top:-10px;
+            }
+            .clear{
+                clear:both;
+            }
+           .facebook{
+            margin-top:-20px;
+            margin-left:93px;
+            
+           }
+           a:hover{
+            text-decoration:underline;
+            
+           }
+           .twitter{
+            margin-top:-20px;
+            margin-left:200px;
+           }
+           .nextaccount{
+            font-size:10px;
+            font-style:'Roboto', sans-serif;
+            margin-left:120px;
+            margin-top:40px;
+           }
+           .username{
+            color:500%;
+            border-radius:7px;
+            border-width:1px;
+            border-color:rgb(192, 184, 171);
+            margin-left:75px;
+            position:relative; 
+            background-color:rgb(135, 144, 144); 
+            color:white;          
+           }
+           .name{
+            position:relative;
+            top:-20px;
+           }
+           .firstname{
+            color:black;
+            background-color:rgb(219, 219, 219);
+            
+            border-width:1px;
+            border-radius:5px;
+           }
+           .username1{
+            color:500%;
+            border-radius:7px;
+            border-width:1px;
+            border-color:rgb(192, 184, 171);
+            margin-left:75px;
+            position:relative; 
+            background-color:rgb(135, 144, 144); 
+            color:white;   
+            width:78px;      
+           }
+           .forgot{
+            color:rgb(52, 52, 202);
+            margin-top:-30px;
+            font-size:13px;
+            text-align:right;
+            margin-right:80px;
+            cursor:pointer;
+           }
+           .forgot:hover{
+            text-decoration:underline;
+            cursor:pointer;
+           }
+           .twosteps{
+            position:relative;
+            left:125px;
+           }
+           .sighin{
+            color:black;
+            background-color:rgb(232, 220, 206);
+            border-width:0.3px;
+            width:80px;
+            border-radius:5px;
+            cursor:pointer;
+            
+           }
+           .sighin:hover{
+            box-shadow:1px 1px 6px 0px black;
+           }
+           .login{
+            color:black;
+            background-color:rgb(232, 220, 206);
+            border-width:0.3px;
+            width:80px;
+            border-radius:5px;
+            cursor:pointer;
+           }
+           .login:hover{
+            box-shadow:1px 1px 6px 0px black;
+           }
+         .last{
+            font-size:13px;
+            padding:30px;
+            margin-top:-20px;
+            position:relative;
+            left:11px;
+         }
+         .agree{
+            color:rgb(52, 52, 202);
+         }
+         .agree:hover{
+            cursor:pointer;
+            text-decoration:underline;
+         }
+         .last1{
+            margin-left:39px;
+            margin-top:-50px;
+         }
+         .agree1{
+            font-size:13px;
+            position:relative;
+            top:-2px;
+         }
+         .select{
+            color:rgb(52,52,202);
+            font-size:11px;
+            position:relative;
+            top:-2px;
+            width:60px;
+            height:14px;
+            border-style:none;
+            background-color:rgb(226, 238, 240);
+         }
+         .submit{
+            font-weight:600;
+            background-color:rgb(223, 220, 173);
+            border-radius:10px;
+            border-style:none;
+            height:25px;
+            position:relative;
+            left:70px;
+            color:black;
+            width:200px;
+         }
+         .submit{
+            cursor:pointer;
+
+         }
+         .submit:hover{
+            box-shadow:1px 1px 6px 0px black;
+         }
+         .submit:active{
+            color:white;
+            background-color:orange;
+         }
+         .sighin:active{
+            color:white;
+            background-color:rgb(16, 54, 107);
+         }
+         .login:active{
+            color:white;
+            background-color:rgb(16, 54, 107);
+         }
+         .overall{
+            margin-left:35%;
+            margin-top:50px;
+         }
+         
+           
+        </style>

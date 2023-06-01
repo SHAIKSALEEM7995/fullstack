@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/login.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title> login html page</title>
+       
+    <style>
+     .first{
+        background-color:rgb(151, 248, 133);
+        color:rgb(0, 1, 1);
+        width:300px;
+        margin-left:65px;
+        padding-left:50px;
+        padding-top:0px;
+        
+        
+        
+        
+            
+        }
+        div{
+            background-color:rgb(204, 241, 219);
+            font-weight:bold;
+            color:black;
+            border:1px solid black;
+            margin-left:400px;
+            margin-top:50px;
+            
+        
+            width:500px;
+            
+        }
+#firstone{
+    color:rgb(15, 68, 184);
+    background-color:rgb(20, 201, 198)
+    cursor:pointer;
+    position:relative;
+    left:250px;
+    top:-10px;
+    
+
+    
+    
+
+}
+#firstone:hover{
+    color:white;
+    background-color:rgb(96, 212, 167);
+    box-shadow:1px 2px 8px rgb(90, 196, 153);
+    
+}
+input{
+    color:blue;
+    background-color:azure
+}
+.two{
+    color:black;
+}
+button{
+    margin-left:90px;
+    color:black;
+    font-weight:bold;
+    background-color:aqua;
+    border-style:none;
+    width:120px;
+    height:25px;
+    border-radius:4px;
+ 
+}
+
+        
+    </style></head>
+    
+    <body>
+        <div>
+            <div class="first">
+                <p>welcome to our website to login</p>
+            </div>
+            <p><button>Enter username</button>
+                <b>:</b>
+                <input class="two" type="value" placeholder="username"></p>
+            <p><button>Enter password</button>
+                <b>:</b>
+                <input class="two" type="password" placeholder="password"></p>
+            <input id="firstone" type="submit">
+        </div>
+        
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

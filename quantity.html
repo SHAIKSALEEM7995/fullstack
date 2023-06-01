@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <title>This is the quantity page.</title>
+        <style>
+            button{
+                color:white;
+                background-color:black;
+                height:30px;
+                width:100px;
+                border-radius:10px;
+                border-style:none;
+                font-weight:bold;
+                cursor:pointer;
+                transition:1s;
+
+            }
+            button:hover{
+                color:blue;
+                background-color:white;
+                opacity:0.5;
+                box-shadow:1px 1px 3px 4px;
+                width:150px;
+                height:20px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="console.log(`item added to cart:${++quantity}`)">Add to cart</button>
+        <button onclick="console.log(`quantity:${quantity+=2}`)">+2</button>
+        <button onclick="console.log(`quantity:${quantity+=3}`)">+3</button>
+        <button onclick="console.log(`quantity:${quantity=0}`)">reset</button>
+        <script>
+            var quantity=0;
+        </script>
+    </body>
+</html>
